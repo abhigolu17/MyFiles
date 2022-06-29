@@ -1,0 +1,22 @@
+
+
+<div class="container">
+  <h1 style="color: red;">Admin Login</h1>
+  <form #login="ngForm" (ngSubmit)="adminLogin()">
+    <div class="fields-container">
+      <mat-form-field class="field" appearance="outline">
+        <mat-label>User Name</mat-label>
+        <input type="name" id="name" name="name"  [(ngModel)]="admin.name" matInput>
+        <!-- <input name="name" [(ngModel)]="admin.name" matInput /> -->
+      </mat-form-field>
+
+      <mat-form-field class="field" appearance="outline">
+        <mat-label>Password</mat-label>
+        <input type="password" id="password" name="password" [(ngModel)]="admin.password" matInput>
+        <!-- <input name="password" [(ngModel)]="admin.password" matInput /> -->
+      </mat-form-field>
+    </div>
+    <button type="submit" mat-raised-button class="buttons" color="accent">Login</button>
+    <!-- <a routerLink="/home" mat-raised-button (click)="onSubmit(admin.name , admin.password);" class="buttons" color="accent">Login</a> -->
+  </form>
+</div>

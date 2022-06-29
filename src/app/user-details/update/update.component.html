@@ -1,0 +1,48 @@
+
+
+<div class="container">
+  <div class="myForm">
+  <form>
+  <h1> Update Page</h1>
+  <div class="fields-container">
+
+
+  <!-- <mat-form-field class="field" appearance="outline">
+    <mat-label>Roll</mat-label>
+    <input name="roll"  [(ngModel)]="user.roll" matInput />
+  </mat-form-field> -->
+
+  <mat-form-field class="field" appearance="outline">
+    <mat-label>Age</mat-label>
+    <input name="age" [(ngModel)]="user.age" matInput />
+  </mat-form-field>
+
+  <mat-form-field class="field" appearance="outline">
+    <mat-label>Name</mat-label>
+    <input name="name" [(ngModel)]="user.name" matInput />
+  </mat-form-field>
+
+  <mat-form-field class="field" appearance="outline">
+    <mat-label>Address</mat-label>
+    <input name="name" [(ngModel)]="user.address" matInput />
+  </mat-form-field>
+
+  <!--
+  <mat-form-field class="field" appearance="outline">
+    <mat-label>Phone</mat-label>
+    <input name="name" [(ngModel)]="model.phone" matInput />
+  </mat-form-field> -->
+
+  <mat-form-field class="field" appearance="outline">
+    <mat-label>Password</mat-label>
+    <input name="name" [(ngModel)]="user.password" matInput />
+  </mat-form-field>
+
+</div>
+<!-- <button mat-raised-button class="buttons" color="accent" class = "btn btn-success" type ="submit">Submit</button> -->
+
+  <a routerLink="/getdetails" mat-raised-button class="buttons" color="accent" (click)="updateData(user.roll)">Update</a>
+</form>
+</div>
+  <!-- {{model | json}} -->
+</div>

@@ -1,0 +1,16 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.container{
+  text-align : center;
+  margin-top: 20;
+  margin: auto;
+  width: 30%;
+  margin-top: 20px;
+  padding: 10px;
+}
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}

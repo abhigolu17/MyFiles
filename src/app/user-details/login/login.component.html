@@ -1,0 +1,22 @@
+
+<div class="container">
+  <!-- <form  class="myForm" #login="ngForm" (ngSubmit)="onSubmit(login)"> -->
+<h1> Login Page</h1>
+<div class="fields-container">
+  <mat-form-field class="field" appearance="outline">
+    <mat-label>User Name</mat-label>
+    <input name="name" [(ngModel)]="admin.name" matInput />
+  </mat-form-field>
+
+  <mat-form-field class="field" appearance="outline">
+    <mat-label>Password</mat-label>
+    <input name="password" [(ngModel)]="admin.password" matInput />
+  </mat-form-field>
+
+</div>
+  <a routerLink="/home" mat-raised-button (click)="onSubmit(admin.name , admin.password);" class="buttons" color="accent">Login</a>
+
+<!-- </form> -->
+
+  {{admin | json}}
+</div>

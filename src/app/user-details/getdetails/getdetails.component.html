@@ -1,0 +1,30 @@
+
+<table border="1" class="container">
+  <tr>
+    <td>Roll</td>
+    <td>Age</td>
+    <td>Name</td>
+    <td>Address</td>
+    <td>Phone</td>
+    <td>Password</td>
+    <td>Edit</td>
+    <td>Delete</td>
+    <td>View</td>
+  </tr>
+  <tr *ngFor="let user of userdata">
+    <td>{{user.roll}}</td>
+    <td>{{user.age}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.address}}</td>
+    <td>{{user.phone}}</td>
+    <td>{{user.password}}</td>
+
+    <!-- <td><button mat-stroked-button class="buttons" color="primary" (click) = "updateData(user.roll)" class = "btn btn-info"> Update</button></td>
+    <td><button mat-stroked-button class="buttons" color="accent" (click) = "deleteUser(user.roll)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button></td>
+    <td><button mat-stroked-button class="buttons" color="primary" (click) = "userDetails(user.roll)" class = "btn btn-info" style="margin-left: 10px"> View</button></td> -->
+
+    <td><a href="getdetails" (click)="deleteUser(user.roll)" mat-stroked-button class="buttons" color="primary" >Delete</a></td>
+    <td><a routerLink="/update/{{user.roll}}" mat-stroked-button class="buttons" color="accent" >Update</a></td>
+    <td><a routerLink="/view/{{user.roll}}" mat-stroked-button class="buttons" color="accent" >View</a></td>
+  </tr>
+</table>

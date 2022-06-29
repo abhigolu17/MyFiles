@@ -1,0 +1,25 @@
+
+<form  class="myForm">
+<table border="1" class="container">
+  <tr>
+    <td>Roll</td>
+    <td>Age</td>
+    <td>Name</td>
+    <td>Address</td>
+    <td>Phone</td>
+    <td>Password</td>
+    <td>Edit</td>
+  </tr>
+  <tr>
+
+    <td>{{userdata.roll}}</td>
+    <td>{{userdata.age}}</td>
+    <td>{{userdata.name}}</td>
+    <td>{{userdata.address}}</td>
+    <td>{{userdata.phone}}</td>
+    <td>{{userdata.password}}</td>
+    <!-- <td><a href="getdetails" (click)="deleteUser(user.roll)" mat-stroked-button class="buttons" color="primary" >Delete</a></td> -->
+    <td><a routerLink="/update" mat-stroked-button class="buttons" color="accent" >Update</a></td>
+  </tr>
+</table>
+</form>

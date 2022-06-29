@@ -1,0 +1,56 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My App</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="container">
+  <form #registerForm="ngForm" (ngSubmit)="btnClick()" class="myForm">
+<h1> User Details</h1>
+<div class="fields-container">
+  <mat-form-field class="field" appearance="outline">
+    <mat-label>Roll Number</mat-label>
+    <input name="roll" [(ngModel)]="model.roll" matInput />
+  </mat-form-field>
+
+  <mat-form-field class="field" appearance="outline">
+    <mat-label>Your Age</mat-label>
+    <input name="age" [(ngModel)]="model.age" matInput />
+  </mat-form-field>
+
+  <mat-form-field class="field" appearance="outline">
+    <mat-label>Name</mat-label>
+    <input name="name" [(ngModel)]="model.name" matInput />
+  </mat-form-field>
+
+  <mat-form-field class="field" appearance="outline">
+    <mat-label>Address</mat-label>
+    <input name="name" [(ngModel)]="model.address" matInput />
+  </mat-form-field>
+
+  <mat-form-field class="field" appearance="outline">
+    <mat-label>Password</mat-label>
+    <input name="name" [(ngModel)]="model.password" matInput />
+  </mat-form-field>
+
+  <mat-form-field class="field" appearance="outline">
+    <mat-label>Mobile No.</mat-label>
+    <input name="name" [(ngModel)]="model.phone" matInput />
+  </mat-form-field>
+
+</div>
+  <a routerLink="/home" mat-raised-button class="buttons" color="accent" (click)="btnClick()">Submit</a>
+</form>
+
+  {{model | json}}
+</div>
+
+
